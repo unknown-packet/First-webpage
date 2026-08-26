@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunder Mifflin Paper Company - Contacto</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-corporativo text-center py-3">
+    <img src="img/logo.png" alt="Logo Dunder Mifflin" class="logo-principal">
+  </header>
+
+  <nav class="navbar navbar-expand navbar-dark bg-slate py-2">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav flex-row gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN 3: FORMULARIO DE PEDIDO -->
+  <section class="container my-5" id="contacto">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm p-4 border-0 bg-white rounded-3">
+          <h2 class="titulo-editorial h2 text-center mb-2">Formulario de Pedido</h2>
+          <p class="text-center text-muted small mb-4">Envía tu consulta o presupuesto y selecciona a tu representante de ventas.</p>
+
+          <form onsubmit="event.preventDefault(); alert('Gracias por enviar tu mensaje. Tu vendedor asignado se pondrá en contacto pronto.');">
+            <div class="mb-3">
+              <label for="nombre" class="form-label fw-semibold text-slate">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ej: Roberto Gómez" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold text-slate">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@empresa.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold text-slate d-block">Selecciona tu Vendedor Asignado</label>
+              <div class="row g-2">
+                <div class="col-6 col-sm-3">
+                  <input type="radio" class="btn-check" name="vendedor" id="v1" autocomplete="off" checked>
+                  <label class="btn btn-outline-secondary w-100 text-start p-2" for="v1">
+                    <span class="d-block fw-bold small">Jim Halpert</span>
+                    <span class="d-block text-muted tiny">Vendedor Senior</span>
+                  </label>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <input type="radio" class="btn-check" name="vendedor" id="v2" autocomplete="off">
+                  <label class="btn btn-outline-secondary w-100 text-start p-2" for="v2">
+                    <span class="d-block fw-bold small">Dwight Schrute</span>
+                    <span class="d-block text-muted tiny">Vendedor Principal</span>
+                  </label>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <input type="radio" class="btn-check" name="vendedor" id="v3" autocomplete="off">
+                  <label class="btn btn-outline-secondary w-100 text-start p-2" for="v3">
+                    <span class="d-block fw-bold small">Phyllis Vance</span>
+                    <span class="d-block text-muted tiny">Vendedora</span>
+                  </label>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <input type="radio" class="btn-check" name="vendedor" id="v4" autocomplete="off">
+                  <label class="btn btn-outline-secondary w-100 text-start p-2" for="v4">
+                    <span class="d-block fw-bold small">Stanley Hudson</span>
+                    <span class="d-block text-muted tiny">Vendedor</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="mensaje" class="form-label fw-semibold text-slate">Detalle del pedido o consulta</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Indica cantidad de resmas, dirección de envío o dudas sobre nuestros productos..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-slate w-100 py-2 font-sans fw-bold">Enviar Consulta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-netlify pt-5 mt-5">
+    <div class="container pb-4 text-center">
+      <p class="mb-0 texto-blanco">Dunder Mifflin Paper Company — Scranton Branch</p>
+    </div>
+    <div class="footer-bottom py-3 text-center">
+      <div class="container">
+        <p class="mb-0 small text-white opacity-75">&copy; Copyright <strong>Dunder Mifflin Paper Company</strong>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Si venís desde "Solicitar" en Productos, precarga el producto en el mensaje -->
+  <script>
+    const parametros = new URLSearchParams(window.location.search);
+    const producto = parametros.get('producto');
+    if (producto) {
+      document.getElementById('mensaje').value =
+        `Hola, quisiera solicitar el siguiente producto: ${producto}.`;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
