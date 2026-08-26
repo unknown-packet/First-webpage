@@ -1,0 +1,157 @@
+:root {
+  --color-slate-main: #1E293B;
+  --color-slate-hover: #0F172A;
+  --color-accent-blue: #2563EB;
+  --color-gold-text: #D97706;
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+.header-corporativo {
+  background-color: #000000;
+  border-bottom: 3px solid #334155;
+}
+
+.logo-principal {
+  max-width: 220px;
+}
+
+.bg-slate {
+  background-color: var(--color-slate-main) !important;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.nav-link.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid var(--color-accent-blue);
+}
+
+.titulo-editorial {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-slate-main);
+  letter-spacing: -0.02em;
+}
+
+.tarjeta-producto {
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.border-gold { border-color: #FCD34D !important; }
+
+.btn-slate {
+  background-color: var(--color-slate-main);
+  color: #FFFFFF;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-slate:hover {
+  background-color: var(--color-slate-hover);
+  color: #FFFFFF;
+}
+
+.btn-outline-slate {
+  border-color: var(--color-slate-main);
+  color: var(--color-slate-main);
+}
+
+.btn-outline-slate:hover {
+  background-color: var(--color-slate-main);
+  color: #FFFFFF;
+}
+
+.lista-servicios {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.lista-servicios li::marker { color: var(--color-accent-blue); }
+
+.link-destacado {
+  color: var(--color-accent-blue);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.tarjeta-promocional {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+  border-color: #FCD34D !important;
+}
+
+.badge-dorado {
+  background-color: var(--color-gold-text);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.footer-netlify {
+  background-color: #1a222f;
+  color: #a0aec0;
+  font-size: 0.88rem;
+}
+
+.footer-netlify h4, .footer-netlify h5 {
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-netlify a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-netlify a:hover {
+  color: #38bdf8;
+}
+
+.footer-netlify ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-netlify ul li {
+  margin-bottom: 0.5rem;
+}
+
+.texto-blanco {
+  color: #ffffff !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2d3748;
+  color: #718096;
+}
+
+.tiny { font-size: 0.75rem; }
+.font-serif { font-family: var(--font-serif); }
