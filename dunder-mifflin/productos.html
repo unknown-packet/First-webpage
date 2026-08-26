@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunder Mifflin Paper Company - Productos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-corporativo text-center py-3">
+    <img src="img/logo.png" alt="Logo Dunder Mifflin" class="logo-principal">
+  </header>
+
+  <nav class="navbar navbar-expand navbar-dark bg-slate py-2">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav flex-row gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN 2: PRODUCTOS -->
+  <section class="container my-5" id="productos">
+    <div class="text-center mb-5">
+      <h2 class="titulo-editorial">Catálogo de los Productos</h2>
+      <p class="text-muted">Explora nuestro surtido de resmas y suministros. Despacho directo desde Scranton.</p>
+    </div>
+
+    <div class="tarjeta-promocional p-4 mb-5 rounded-3 border">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+        <div>
+          <span class="badge-dorado mb-2 d-inline-block">Promoción Especial</span>
+          <h3 class="h4 mb-1 text-slate font-serif fw-bold">El Boleto Dorado de Michael Scott</h3>
+          <p class="mb-0 text-muted small">Ciertas resmas contienen cupones de descuento directo del 10% para tu próximo pedido.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+      <div class="col">
+        <div class="card h-100 tarjeta-producto">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2 align-self-start">Más vendido</span>
+            <h5 class="card-title text-slate fw-bold">Resma A4 75g</h5>
+            <p class="card-text text-muted small">A4 · 500 hojas · 75g/m²<br>Ideal para fotocopias e impresiones diarias.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-slate">USD 4.90</span>
+              <a href="contacto.html?producto=Resma%20A4%2075g%20(USD%204.90)" class="btn btn-outline-slate btn-sm">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 tarjeta-producto border-gold">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-warning text-dark mb-2 align-self-start">Apto Boleto Dorado</span>
+            <h5 class="card-title text-slate fw-bold">Resma A4 90g Premium</h5>
+            <p class="card-text text-muted small">A4 · 500 hojas · 90g/m²<br>Mayor blancura para informes ejecutivos.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-slate">USD 6.80</span>
+              <a href="contacto.html?producto=Resma%20A4%2090g%20Premium%20(USD%206.80)" class="btn btn-outline-slate btn-sm">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 tarjeta-producto">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-light text-dark border mb-2 align-self-start">Especialidad</span>
+            <h5 class="card-title text-slate fw-bold">Papel Fotográfico Glossy</h5>
+            <p class="card-text text-muted small">A4 · 20 hojas · 180g/m²<br>Acabado brillante para fotografías.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-slate">USD 9.50</span>
+              <a href="contacto.html?producto=Papel%20Fotogr%C3%A1fico%20Glossy%20(USD%209.50)" class="btn btn-outline-slate btn-sm">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 tarjeta-producto">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-primary mb-2 align-self-start">Nuevo</span>
+            <h5 class="card-title text-slate fw-bold">Papel Membretado</h5>
+            <p class="card-text text-muted small">A4 · 100 hojas · 90g/m²<br>Personalizado con membrete institucional.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-slate">USD 11.20</span>
+              <a href="contacto.html?producto=Papel%20Membretado%20(USD%2011.20)" class="btn btn-outline-slate btn-sm">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-netlify pt-5 mt-5">
+    <div class="container pb-4 text-center">
+      <p class="mb-0 texto-blanco">Dunder Mifflin Paper Company — Scranton Branch</p>
+    </div>
+    <div class="footer-bottom py-3 text-center">
+      <div class="container">
+        <p class="mb-0 small text-white opacity-75">&copy; Copyright <strong>Dunder Mifflin Paper Company</strong>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
