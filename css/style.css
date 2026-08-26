@@ -1,9 +1,3 @@
-/* ===================================================
-   Dunder Mifflin Paper Company
-   Estilos generales del sitio (extraídos del diseño
-   original: paleta slate + dorado, tipografías Inter/Lora)
-   =================================================== */
-
 :root {
   --color-slate-main: #1E293B;
   --color-slate-hover: #0F172A;
